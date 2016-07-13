@@ -21,6 +21,7 @@ for (i = 1; i < 9; i++) {
 
 		
 function imgloader(num) {
+	alert("+");	
 	setTimeout (function() {
 			$('#img-'+ num +' #loadimg #loader').animate({opacity:"0"}, 500);
 			setTimeout (function() {
