@@ -21,7 +21,7 @@ for (i = 1; i < 9; i++) {
 
 		
 function imgloader(num) {
-	alert("+");	
+	setTimeout (function() {
 	setTimeout (function() {
 			$('#img-'+ num +' #loadimg #loader').animate({opacity:"0"}, 500);
 			setTimeout (function() {
@@ -46,6 +46,7 @@ function imgloader(num) {
 			}
 		});
 		image.src = image_url;
+	}, 100);
 }
 
 $('#img-1').bgLoaded({
