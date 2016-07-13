@@ -22,8 +22,11 @@ for (i = 1; i < 9; i++) {
 		
 function imgloader(num) {
 	setTimeout (function() {
-		$('#img-'+ num +' #loadimg').animate({opacity:"0"}, 500);
-		}, 500);
+			$('#img-'+ num +' #loadimg #loader').animate({opacity:"0"}, 500);
+			setTimeout (function() {
+				$('#img-'+ num +' #loadimg').animate({opacity:"0"}, 1000);
+			}, 1000);
+		}, 700);
 		var image_url = $('#img-'+ num).css('background-image'),
 		image;
 		image_url = image_url.match(/^url\("?(.+?)"?\)$/);
