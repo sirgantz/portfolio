@@ -43,18 +43,18 @@ body {
 	}
 	#mobilemenu {
 		width: 100%;
-		height: 20.5vw;
+		height: 22.5vw;
 		background: #4E63AF;
 		overflow: none;
 	}
 	#logo-text {
 		text-align: center;
-		color: white;
+		color: #FAFAFA;
 		font-size: 0vw;
 	}
 	#mobilelogo-text {
 		text-align: center;
-		color: white;
+		color: #FAFAFA;
 		font-size: 1.5vw;
 	}
 	#mobilelogo {
@@ -91,6 +91,7 @@ body {
 		text-align: center;
 		color: white;
 		font-size: 1.5vw;
+		opacity: 1;
 	}
 	#mobilelogo-text {
 		text-align: center;
@@ -110,6 +111,7 @@ body {
 		padding-top: 30px;
 		width: 100%;
 		height: 8.9vw;
+		opacity: 1;
 	}
 
 }
@@ -133,49 +135,49 @@ body {
 
 #img-1 {
 	height: 150px;
-	background-image: url("https://psv4.vk.me/c615521/u19663469/docs/29b5f81fdc73/topor.png");
+	background-image: url("../img/port/1.jpg");
 	background-size: 100% 100%;
 }
 
 #img-2 {
 	height: 150px;
-	background-image: url("https://psv4.vk.me/c810539/u19663469/docs/d122528af122/es.jpg");
+	background-image: url("../img/port/2.jpg");
 	background-size: 100% 100%;
 }
 
 #img-3 {
 	height: 150px;
-	background-image: url("https://psv4.vk.me/c415928/u19663469/docs/c459daf3add6/diva3.jpg");
+	background-image: url("../img/port/3.jpg");
 	background-size: 100% 100%;
 }
 
 #img-4 {
 	height: 150px;
-	background-image: url("https://pp.vk.me/c636228/v636228469/c5ab/15eh1b2FBf8.jpg");
+	background-image: url("../img/port/4.jpg");
 	background-size: 100% 100%;
 }
 
 #img-5 {
 	height: 150px;
-	background-image: url("https://pp.vk.me/c636029/v636029469/cb5e/Z86upW6EegI.jpg");
+	background-image: url("../img/port/5.jpg");
 	background-size: 100% 100%;
 }
 
 #img-6 {
 	height: 150px;
-	background-image: url("https://pp.vk.me/c633721/v633721469/2d634/T0OsqUXXo6M.jpg");
+	background-image: url("../img/port/6.jpg");
 	background-size: 100% 100%;
 }
 
 #img-7 {
 	height: 150px;
-	background-image: url("https://psv4.vk.me/c615124/u19663469/docs/e96c96f7d652/lira2.jpg");
+	background-image: url("../img/port/7.jpg");
 	background-size: 100% 100%;
 }
 
 #img-8 {
 	height: 150px;
-	background-image: url("https://pp.vk.me/c623616/v623616469/267a5/j5SuzfwbmOw.jpg");
+	background-image: url("../img/port/8.jpg");
 	background-size: 100% 100%;
 }
 
@@ -212,19 +214,33 @@ body {
 #portfolio p {
 	font-size: 3.5vw;
 	margin: 20px;
+	color: #FAFAFA;
+}
+
+#portfolio {
+	opacity: 1;
 }
 
 #shtorka {
-		width: 0%;
+		width: 100%;
 		position: fixed;
 		height: 100%;
-		background: #1E75AF;
+		background: #FAFAFA;
 		z-index:999;
 	}
 	
 #shtorka #fullimg {
-		opacity: 0.5;
+		opacity: 0;
 		background-size: 100% 100%;
 		width: 10px;
 		height: 10px;
 	}
+
+#block1 {
+	overflow: none;
+}
+
+#animblock1 {
+	position: relative;
+	left: 200px;
+}
