@@ -186,18 +186,18 @@ function shtorkaimg(img) {
 	}
 	if (widdd > heiii) {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%"});
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%","border":"2px solid red"});
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%"});
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%","border":"2px solid green"});
 		}
 	}
 	else {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"90%","height":"auto","padding-top":"30%"});
+			$("#curim").css({"width":"90%","height":"auto","padding-top":"30%","border":"2px solid blue"});
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"90%","height":"auto"});
+			$("#curim").css({"width":"90%","height":"auto","border":"2px solid black"});
 		}
 	}
 }
