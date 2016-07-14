@@ -186,18 +186,34 @@ function shtorkaimg(img) {
 	}
 	if (widdd > heiii) {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%","border":"2px solid red"});
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid red","opacity":"0"});
+			imw = $("#curim").width();
+			imh = $("#curim").height();
+			padding = (heiii - imh)/2
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%","border":"2px solid green"});
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid green","opacity":"0"});
+			imw = $("#curim").width();
+			imh = $("#curim").height();
+			padding = (heiii - imh)/2
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 		}
 	}
 	else {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"90%","height":"auto","padding-top":"30%","border":"2px solid blue"});
+			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid blue","opacity":"0"});
+			imw = $("#curim").width();
+			imh = $("#curim").height();
+			padding = (heiii - imh)/2
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"90%","height":"auto","border":"2px solid black"});
+			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid black","opacity":"0"});
+			imw = $("#curim").width();
+			imh = $("#curim").height();
+			padding = (heiii - imh)/2
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 		}
 	}
 }
