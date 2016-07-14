@@ -60,7 +60,13 @@ setTimeout (function() {
 	setTimeout (function() {
 		$('#logo-text').animate({opacity:"1"}, 700);
 		setTimeout (function() {
-			$('#portfolio').animate({opacity:"1"}, 700);
+			$('#footer1').animate({opacity:"1"}, 700);
+			setTimeout (function() {
+				$('#footer2').animate({opacity:"1"}, 700);
+				setTimeout (function() {
+					$('#portfolio').animate({opacity:"1"}, 700);
+				}, 700);
+			}, 700);
 		}, 700);
 	}, 700);
 }, 1500);
