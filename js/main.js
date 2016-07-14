@@ -56,7 +56,7 @@ $('#img-1').bgLoaded({
     afterLoaded : function() {
 		imgloader(1);
 		setTimeout (function() {
-		$("#shtorka").animate({"width":"0px"}, 800);
+		$("#shtorka").animate({"width":"0px"}, 900);
 		$("#animblock1").animate({"left":"0px"}, 600);
 		}, 500);
     }
