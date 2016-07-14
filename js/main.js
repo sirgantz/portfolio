@@ -15,7 +15,7 @@ else {
 
 var i;
 imw = $("#img-1").width();
-for (i = 1; i < 9; i++) {
+for (i = 1; i < 13; i++) {
 	$("#img-"+i).css({"height":imw+"px"});
 	$("#img-" + i).animate({"opacity":"1"}, 300);
 	//var loader = Snap('#img-'+ i +' #loader');
@@ -129,6 +129,30 @@ $('#img-8').bgLoaded({
     }
 });
 
+$('#img-9').bgLoaded({
+    afterLoaded : function() {
+		imgloader(9);
+    }
+});
+
+$('#img-10').bgLoaded({
+    afterLoaded : function() {
+		imgloader(10);
+    }
+});
+
+$('#img-11').bgLoaded({
+    afterLoaded : function() {
+		imgloader(11);
+    }
+});
+
+$('#img-12').bgLoaded({
+    afterLoaded : function() {
+		imgloader(12);
+    }
+});
+
 
 
 $(window).resize(function() {
@@ -140,7 +164,7 @@ $(window).resize(function() {
 	heiii = $("#shtorka").height();
 	var i;
 	imw = $("#img-1").width();
-	for (i = 1; i < 9; i++) {
+	for (i = 1; i < 13; i++) {
 		$("#img-"+i).css({"height":imw+"px"});
 	}
 });
@@ -176,6 +200,22 @@ $("#img-7").click(function() {
 });
 $("#img-8").click(function() {
 	var img = $('#img-8').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-9").click(function() {
+	var img = $('#img-9').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-10").click(function() {
+	var img = $('#img-10').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-11").click(function() {
+	var img = $('#img-11').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-12").click(function() {
+	var img = $('#img-12').css('background-image')
 	shtorkaimg(img);
 });
 //
