@@ -3,6 +3,7 @@ $(document).ready(function() {
 	
 	
 widdd = $("#block1").width();
+heiii = $("#menu").height();
 if (widdd > 768) {
 	
 }
@@ -109,11 +110,100 @@ $('#img-8').bgLoaded({
 
 
 $(window).resize(function() {
+	$("#shtorka").css({"width":"0%"});
+	currentimg = document.querySelector("#shtorka");
+	currentimg.innerHTML = "<center></center>";
+	//
 	widdd = $("#block1").width();
+	heiii = $("#menu").height();
 	var i;
 	imw = $("#img-1").width();
 	for (i = 1; i < 9; i++) {
 		$("#img-"+i).css({"height":imw+"px"});
 	}
 });
+
+//
+$("#img-1").click(function() {
+	var img = $('#img-1').css('background-image')
+	shtorkaimg(img);
 });
+$("#img-2").click(function() {
+	var img = $('#img-2').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-3").click(function() {
+	var img = $('#img-3').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-4").click(function() {
+	var img = $('#img-4').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-5").click(function() {
+	var img = $('#img-5').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-6").click(function() {
+	var img = $('#img-6').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-7").click(function() {
+	var img = $('#img-7').css('background-image')
+	shtorkaimg(img);
+});
+$("#img-8").click(function() {
+	var img = $('#img-8').css('background-image')
+	shtorkaimg(img);
+});
+//
+$("#shtorka").click(function() {
+	$("#shtorka").css({"width":"0%"});
+	currentimg = document.querySelector("#shtorka");
+	currentimg.innerHTML = "<center></center>";
+});
+	
+function shtorkaimg(img) {
+    img = img.match(/^url\("?(.+?)"?\)$/);
+	img = img[1];
+    currentimg = document.querySelector("#shtorka");
+	currentimg.innerHTML = "<center><img id='curim' src='"+img+"' style='width:auto;height:auto;'></center>";
+	$("#shtorka").css({"width":"100%"});
+	imw = $("#curim").width();
+	imh = $("#curim").height();
+	//alert(imw + " - " + imh);
+	//alert(widdd + " - " + heiii);
+	//$("#curim").css({"width":"200px","height":"100px"});
+	
+	if (imw > imh) {
+		var imgsize = 1;
+	}
+	else if (imw == imh) {
+		var imgsize = 1;
+	}
+	else if (imw < imh) {
+		var imgsize = 0;
+	}
+	if (widdd > heiii) {
+		if (imgsize == 1) {
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%"});
+		}
+		else if (imgsize == 0) {
+			$("#curim").css({"width":"auto","height":"90%","padding-top":"2.5%"});
+		}
+	}
+	else {
+		if (imgsize == 1) {
+			$("#curim").css({"width":"90%","height":"auto","padding-top":"30%"});
+		}
+		else if (imgsize == 0) {
+			$("#curim").css({"width":"90%","height":"auto"});
+		}
+	}
+}
+
+
+});
+
+
+
