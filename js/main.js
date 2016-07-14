@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	
+	
 widdd = $("#block1").width();
 if (widdd > 768) {
 	
@@ -27,7 +30,7 @@ function imgloader(num) {
 			setTimeout (function() {
 				$('#img-'+ num +' #loadimg').animate({opacity:"0"}, 1000);
 			}, 1000);
-		}, 700);
+		}, 1000);
 		var image_url = $('#img-'+ num).css('background-image'),
 		image;
 		image_url = image_url.match(/^url\("?(.+?)"?\)$/);
@@ -52,6 +55,10 @@ function imgloader(num) {
 $('#img-1').bgLoaded({
     afterLoaded : function() {
 		imgloader(1);
+		setTimeout (function() {
+		$("#shtorka").animate({"width":"0px"}, 800);
+		$("#animblock1").animate({"left":"0px"}, 600);
+		}, 500);
     }
 });
 
