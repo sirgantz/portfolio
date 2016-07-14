@@ -55,14 +55,14 @@ body {
 	#mobilelogo-text {
 		text-align: center;
 		color: #FAFAFA;
-		font-size: 1.5vw;
+		font-size: 2.5vw;
 	}
 	#mobilelogo {
 		display: block;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 20px;
 		width: 100%;
-		height: 8.9vw;
+		height: 9.9vw;
 	}
 	#logo {
 		display: block;
