@@ -37,7 +37,7 @@ body {
     }
 	#menu {
 		width: 0%;
-		height: 0%;
+		height: 100%;
 		background: none;
 		overflow: none;
 	}
@@ -227,6 +227,7 @@ body {
 		height: 100%;
 		background: #FAFAFA;
 		z-index:999;
+		overflow: none;
 	}
 	
 #shtorka #fullimg {
