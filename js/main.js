@@ -11,24 +11,26 @@ else {
 }
 
 
+
 var i;
 imw = $("#img-1").width();
 for (i = 1; i < 9; i++) {
 	$("#img-"+i).css({"height":imw+"px"});
 	$("#img-" + i).animate({"opacity":"1"}, 300);
-	var loader = Snap('#img-'+ i +' #loader');
-	loaderline = loader.select('#loaderline');
-	loaderline.animate({transform: "r36000,18,18"}, 100000, mina.minaeaseout);
+	//var loader = Snap('#img-'+ i +' #loader');
+	//			loaderline = loader.select('#loaderline');
+	//loaderline.animate({transform: "r360,18,18"}, 1000, mina.minaeaseout);
 }
+
 
 
 		
 function imgloader(num) {
 	setTimeout (function() {
-	setTimeout (function() {
-			$('#img-'+ num +' #loadimg #loader').animate({opacity:"0"}, 500);
+		setTimeout (function() {
+			$('#img-'+ num +' #loadimg .sk-folding-cube').animate({opacity:"0"}, 500);
 			setTimeout (function() {
-				$('#img-'+ num +' #loadimg').animate({opacity:"0"}, 1000);
+				$('#img-'+ num +' #loadimg').animate({opacity:"0"}, 700);
 			}, 1000);
 		}, 1000);
 		var image_url = $('#img-'+ num).css('background-image'),
