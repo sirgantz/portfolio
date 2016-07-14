@@ -55,17 +55,29 @@ function imgloader(num) {
 	}, 100);
 }
 
+setTimeout (function() {
+	$('#logo').animate({opacity:"1"}, 700);
+	setTimeout (function() {
+		$('#logo-text').animate({opacity:"1"}, 700);
+		setTimeout (function() {
+			$('#portfolio').animate({opacity:"1"}, 700);
+		}, 700);
+	}, 700);
+}, 1500);
+
+//setTimeout (function() {
+		//$("#shtorka").animate({"width":"0px"}, 900);
+		//$("#animblock1").animate({"left":"0px"}, 600);
+//		setTimeout(function() {
+			$('#shtorka').css({'background':'none'});
+			$('#shtorka').css({'background-image':'url(img/black.png)'});
+//		}, 900);
+//}, 1000);
+
 $('#img-1').bgLoaded({
     afterLoaded : function() {
 		imgloader(1);
-		setTimeout (function() {
-		$("#shtorka").animate({"width":"0px"}, 900);
-		$("#animblock1").animate({"left":"0px"}, 600);
-		setTimeout(function() {
-			$('#shtorka').css({'background':'none'});
-			$('#shtorka').css({'background-image':'url(img/black.png)'});
-		}, 900);
-		}, 500);
+		
     }
 });
 
