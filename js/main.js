@@ -3,7 +3,7 @@ $(document).ready(function() {
 	
 	
 widdd = $("#block1").width();
-heiii = $("#menu").height();
+heiii = $("#shtorka").height();
 if (widdd > 768) {
 	
 }
@@ -115,7 +115,7 @@ $(window).resize(function() {
 	currentimg.innerHTML = "<center></center>";
 	//
 	widdd = $("#block1").width();
-	heiii = $("#menu").height();
+	heiii = $("#shtorka").height();
 	var i;
 	imw = $("#img-1").width();
 	for (i = 1; i < 9; i++) {
