@@ -61,6 +61,10 @@ $('#img-1').bgLoaded({
 		setTimeout (function() {
 		$("#shtorka").animate({"width":"0px"}, 900);
 		$("#animblock1").animate({"left":"0px"}, 600);
+		setTimeout(function() {
+			$('#shtorka').css({'background':'none'});
+			$('#shtorka').css({'background-image':'url(img/black.png)'});
+		}, 900);
 		}, 500);
     }
 });
@@ -190,14 +194,14 @@ function shtorkaimg(img) {
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, padding*10);
 		}
 		else if (imgsize == 0) {
 			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid green","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, padding*20);
 		}
 	}
 	else {
@@ -206,14 +210,14 @@ function shtorkaimg(img) {
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, padding*10);
 		}
 		else if (imgsize == 0) {
 			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid black","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, padding*20);
 		}
 	}
 }
