@@ -74,6 +74,17 @@ body {
 	#portfolio {
 		opacity: 1;
 	}
+	#footer1 {
+		text-align: center;
+		color: #FAFAFA;
+		font-size: 0.0vw;
+		padding-top: 0vh;
+	}
+	#footer2 {
+			text-align: center;
+			color: #FAFAFA;
+			font-size: 0.0vw;
+	}
 }
 
 
@@ -117,6 +128,19 @@ body {
 		opacity: 0;
 	}
 	#portfolio {
+		opacity: 0;
+	}
+	#footer1 {
+		text-align: center;
+		color: #FAFAFA;
+		font-size: 1.2vw;
+		padding-top: 60vh;
+		opacity: 0;
+	}
+	#footer2 {
+		text-align: center;
+		color: #FAFAFA;
+		font-size: 1.2vw;
 		opacity: 0;
 	}
 }
