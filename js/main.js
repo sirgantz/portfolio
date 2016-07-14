@@ -194,14 +194,24 @@ function shtorkaimg(img) {
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			if (widdd > 768) {
+				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			}
+			else {
+				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+			}
 		}
 		else if (imgsize == 0) {
 			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid green","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			if (widdd > 768) {
+				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			}
+			else {
+				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+			}
 		}
 	}
 	else {
@@ -210,14 +220,24 @@ function shtorkaimg(img) {
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 1200);
+			if (widdd > 768) {
+				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			}
+			else {
+				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+			}
 		}
 		else if (imgsize == 0) {
 			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid black","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
 			padding = (heiii - imh)/2
-			$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			if (widdd > 768) {
+				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+			}
+			else {
+				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+			}
 		}
 	}
 }
