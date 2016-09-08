@@ -317,10 +317,11 @@ $("#img-12").click(function() {
 	shtorkaimg(img);
 });
 //
-$("#shtorka").click(function() {
+$(".sclose").click(function() {
 	$("#shtorka").css({"width":"0%"});
 	currentimg = document.querySelector("#shtorka");
 	currentimg.innerHTML = "<center></center>";
+	$(".sclose").css({"width":"0%","height":"0%"});
 });
 	
 function shtorkaimg(img) {
@@ -329,6 +330,7 @@ function shtorkaimg(img) {
     currentimg = document.querySelector("#shtorka");
 	currentimg.innerHTML = "<center><img id='curim' src='"+img+"' style='width:auto;height:auto;'></center>";
 	$("#shtorka").css({"width":"100%"});
+	$(".sclose").css({"width":"8vh","height":"8vh"});
 	imw = $("#curim").width();
 	imh = $("#curim").height();
 	//alert(imw + " - " + imh);
