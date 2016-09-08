@@ -30,6 +30,10 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+	#animblock1 {
+		position: relative;
+		left: -10px;
+	}
     [class*="col-"] {
         width: 100%;
 		display: block;
@@ -355,7 +359,3 @@ body {
 	overflow: none;
 }
 
-#animblock1 {
-	position: relative;
-	left: 0px;
-}
