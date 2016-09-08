@@ -85,11 +85,48 @@ body {
 			color: #FAFAFA;
 			font-size: 0.0vw;
 	}
+	#infob {
+		height: 0px;
+		width: 0px;
+		overflow: hidden;
+	}
 }
 
 
 
 @media only screen and (min-width: 769px) {
+	#infob {
+		height: 60vh;
+		width: 100%;
+		overflow: hidden;
+		font-size: 1.2vw;
+	}
+	#infob a {
+		text-decoration: none;
+	}
+	#infob-downloadimg {
+		position: relative;
+		top: 5px;
+		width: 3.5vh;
+	}
+	#infob-block {
+		width:100%;
+		height: 100%;
+		position: relative;
+		top: -50vh;
+	}
+	#infob-text1 {
+		padding-top: 2vh;
+		text-align: left;
+		padding-left: 27%;
+	}
+	#infob-text2 {
+		padding-top: 2vh;
+	}
+	#infobimg {
+		width: 60%;
+		padding-top: 3vh;
+	}
 	#menu {
 		width: 25%;
 		height: 100%;
@@ -106,6 +143,7 @@ body {
 		color: white;
 		font-size: 1.5vw;
 		opacity: 0;
+		cursor: pointer;
 	}
 	#mobilelogo-text {
 		text-align: center;
@@ -126,6 +164,7 @@ body {
 		width: 100%;
 		height: 8.9vw;
 		opacity: 0;
+		cursor: pointer;
 	}
 	#portfolio {
 		opacity: 0;
@@ -134,7 +173,7 @@ body {
 		text-align: center;
 		color: #FAFAFA;
 		font-size: 1.2vw;
-		padding-top: 60vh;
+		padding-top: 0vh;
 		opacity: 0;
 	}
 	#footer2 {
