@@ -26,6 +26,8 @@ $("#logo-text").click(function() {
 	}
 });	
 
+$("#lang").animate({"opacity":"1"}, 1000);
+
 $("#l-ua").click(function() {
 	$("#l-ua").css({"text-decoration":"underline"});
 	$("#l-ru").css({"text-decoration":"none"});
