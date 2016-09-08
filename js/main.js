@@ -1,6 +1,53 @@
 $(document).ready(function() {
 
-	
+infobready = 0;
+infobhidden = 1;
+
+$("#logo-text").click(function() {
+	if (infobready == 0)
+	{
+		if (infobhidden == 1)
+		{
+			infobhidden = 0;
+			infobready = 1;
+			setTimeout(function() {
+				infobready = 0;
+			}, 1100);
+			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
+		}
+		else {
+			infobhidden = 1;
+			infobready = 1;
+			setTimeout(function() {
+				infobready = 0;
+			}, 1100);
+			$("#infob-block").animate({"top":"-50vh"}, 1000, 'easeInOutBack');
+		}
+	}
+});	
+
+$("#logo").click(function() {
+	if (infobready == 0)
+	{
+		if (infobhidden == 1)
+		{
+			infobhidden = 0;
+			infobready = 1;
+			setTimeout(function() {
+				infobready = 0;
+			}, 1100);
+			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
+		}
+		else {
+			infobhidden = 1;
+			infobready = 1;
+			setTimeout(function() {
+				infobready = 0;
+			}, 1100);
+			$("#infob-block").animate({"top":"-50vh"}, 1000, 'easeInOutBack');
+		}
+	}
+});	
 	
 widdd = $("#block1").width();
 heiii = $("#shtorka").height();
@@ -251,7 +298,7 @@ function shtorkaimg(img) {
 			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2
+			padding = (heiii - imh)/2;
 			if (widdd > 768) {
 				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 			}
@@ -263,7 +310,7 @@ function shtorkaimg(img) {
 			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid green","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2
+			padding = (heiii - imh)/2;
 			if (widdd > 768) {
 				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 			}
@@ -277,7 +324,7 @@ function shtorkaimg(img) {
 			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid blue","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2
+			padding = (heiii - imh)/2;
 			if (widdd > 768) {
 				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 			}
@@ -289,7 +336,7 @@ function shtorkaimg(img) {
 			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid black","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2
+			padding = (heiii - imh)/2;
 			if (widdd > 768) {
 				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
 			}
