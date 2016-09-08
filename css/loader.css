@@ -1,11 +1,27 @@
-.sk-folding-cube {
-  padding-top: 5vw;
-  padding-left: 6vw;
-  width: 5vw;
-  height: 5vw;
-  position: relative;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+
+
+@media only screen and (max-width: 768px) {
+	.sk-folding-cube {
+	  padding-top: 15vw;
+	  padding-left: 20vw;
+	  width: 25vw;
+	  height: 25vw;
+	  position: relative;
+	  -webkit-transform: rotateZ(45deg);
+	  transform: rotateZ(45deg);
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.sk-folding-cube {
+	  padding-top: 5vw;
+	  padding-left: 6vw;
+	  width: 5vw;
+	  height: 5vw;
+	  position: relative;
+	  -webkit-transform: rotateZ(45deg);
+	  transform: rotateZ(45deg);
+	}
 }
 
 .sk-folding-cube .sk-cube {
