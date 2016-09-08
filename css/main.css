@@ -109,7 +109,16 @@ body {
 	}
 }
 
-
+.sclose {
+	width:0vh;
+	height:0vh;
+	background-image: url("../img/close.svg");
+	background-size: 100% 100%;
+	position:fixed;
+	margin:3vh;
+	right:1px;
+	z-index: 9999999;
+}
 
 @media only screen and (min-width: 769px) {
 	[id*="img-"] {
