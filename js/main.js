@@ -26,6 +26,55 @@ $("#logo-text").click(function() {
 	}
 });	
 
+$("#l-ua").click(function() {
+	$("#l-ua").css({"text-decoration":"underline"});
+	$("#l-ru").css({"text-decoration":"none"});
+	$("#l-en").css({"text-decoration":"none"});
+	lang = document.querySelector("#logo-text");
+	lang.innerHTML = "Вiрстюк Богдан";
+	lang = document.querySelector("#infob-text1");
+	lang.innerHTML = "<img src='img/download.svg' id='infob-downloadimg' alt=''>Завантажити резюме";
+	lang = document.querySelector("#footer1");
+	lang.innerHTML = "© 2016 VirB. Всi права захищенi.";
+	lang = document.querySelector("#footer2");
+	lang.innerHTML = "Дизайн <a href='https://vk.com/sirgantz' style='color:white'>Вiрстюка Богдана";
+	lang = document.querySelector("#portfolio-p");
+	lang.innerHTML = "Портфолiо";
+});
+
+$("#l-ru").click(function() {
+	$("#l-ua").css({"text-decoration":"none"});
+	$("#l-ru").css({"text-decoration":"underline"});
+	$("#l-en").css({"text-decoration":"none"});
+	lang = document.querySelector("#logo-text");
+	lang.innerHTML = "Вирстюк Богдан";
+	lang = document.querySelector("#infob-text1");
+	lang.innerHTML = "<img src='img/download.svg' id='infob-downloadimg' alt=''>Скачать резюме";
+	lang = document.querySelector("#footer1");
+	lang.innerHTML = "© 2016 VirB. Все права защищены.";
+	lang = document.querySelector("#footer2");
+	lang.innerHTML = "Дизайн <a href='https://vk.com/sirgantz' style='color:white'>Вирстюка Богдана";
+	lang = document.querySelector("#portfolio-p");
+	lang.innerHTML = "Портфолио";
+});	
+
+$("#l-en").click(function() {
+	$("#l-ua").css({"text-decoration":"none"});
+	$("#l-ru").css({"text-decoration":"none"});
+	$("#l-en").css({"text-decoration":"underline"});
+	lang = document.querySelector("#logo-text");
+	lang.innerHTML = "Virstiuk Bogdan";
+	lang = document.querySelector("#infob-text1");
+	lang.innerHTML = "<img src='img/download.svg' id='infob-downloadimg' alt=''>Download resume";
+	lang = document.querySelector("#footer1");
+	lang.innerHTML = "© 2016 VirB. All Rights Reserved.";
+	lang = document.querySelector("#footer2");
+	lang.innerHTML = "Design by <a href='https://vk.com/sirgantz' style='color:white'>Virstiuk Bogdan";
+	lang = document.querySelector("#portfolio-p");
+	lang.innerHTML = "Portfolio";
+});	
+
+
 $("#logo").click(function() {
 	if (infobready == 0)
 	{
