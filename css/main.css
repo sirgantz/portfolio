@@ -105,6 +105,7 @@ body {
 		top: 10px;
 		left: 10px;
 		cursor: pointer;
+		opacity: 0;
 	}
 	#l-en {
 		text-decoration: underline;
