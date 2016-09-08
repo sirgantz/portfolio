@@ -12,7 +12,7 @@ $("#logo-text").click(function() {
 			infobready = 1;
 			setTimeout(function() {
 				infobready = 0;
-			}, 1100);
+			}, 1010);
 			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
 		}
 		else {
@@ -20,7 +20,7 @@ $("#logo-text").click(function() {
 			infobready = 1;
 			setTimeout(function() {
 				infobready = 0;
-			}, 1100);
+			}, 1010);
 			$("#infob-block").animate({"top":"-50vh"}, 1000, 'easeInOutBack');
 		}
 	}
@@ -35,7 +35,7 @@ $("#logo").click(function() {
 			infobready = 1;
 			setTimeout(function() {
 				infobready = 0;
-			}, 1100);
+			}, 1010);
 			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
 		}
 		else {
@@ -43,7 +43,7 @@ $("#logo").click(function() {
 			infobready = 1;
 			setTimeout(function() {
 				infobready = 0;
-			}, 1100);
+			}, 1010);
 			$("#infob-block").animate({"top":"-50vh"}, 1000, 'easeInOutBack');
 		}
 	}
