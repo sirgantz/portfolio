@@ -144,6 +144,18 @@ body {
 	z-index: 9999999;
 }
 
+.smov {
+	width:8vh;
+	height:8vh;
+	background-image: url("../img/mov.svg");
+	background-size: 100% 100%;
+	position:fixed;
+	margin:3vh;
+	margin-top:13vh;
+	right:1px;
+	z-index: 9999999;
+}
+
 @media only screen and (min-width: 769px) {
 	[id*="img-"] {
 		background: #4D7CC1;
@@ -338,6 +350,30 @@ body {
 #img-12 {
 	height: 150px;
 	background-image: url("../img/port/12.jpg");
+	background-size: 100% 100%;
+}
+
+#img-13 {
+	height: 150px;
+	background-image: url("../img/port/13.jpg");
+	background-size: 100% 100%;
+}
+
+#img-14 {
+	height: 150px;
+	background-image: url("../img/port/14.jpg");
+	background-size: 100% 100%;
+}
+
+#img-15 {
+	height: 150px;
+	background-image: url("../img/port/15.jpg");
+	background-size: 100% 100%;
+}
+
+#img-16 {
+	height: 150px;
+	background-image: url("../img/port/16.jpg");
 	background-size: 100% 100%;
 }
 
