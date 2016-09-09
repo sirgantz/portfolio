@@ -120,6 +120,30 @@ body {
 	z-index: 9999999;
 }
 
+.ssvg {
+	width:8vh;
+	height:8vh;
+	background-image: url("../img/js.svg");
+	background-size: 100% 100%;
+	position:fixed;
+	margin:3vh;
+	margin-top:13vh;
+	right:1px;
+	z-index: 9999999;
+}
+
+.simg {
+	width:8vh;
+	height:8vh;
+	background-image: url("../img/img.svg");
+	background-size: 100% 100%;
+	position:fixed;
+	margin:3vh;
+	margin-top:13vh;
+	right:1px;
+	z-index: 9999999;
+}
+
 @media only screen and (min-width: 769px) {
 	[id*="img-"] {
 		background: #4D7CC1;
