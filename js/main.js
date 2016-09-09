@@ -383,19 +383,6 @@ function shtorkaimg(img, imgnum) {
 			else {
 				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
 			}
-			if (imgnum == 12)
-			{
-				hcurim2 = $("#curim2").height();
-				wcurim2 = $("#curim2").width();
-				currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
-				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
-				$(".ssvg").click(function() {
-						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='valhalla.html' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
-						/*$(".simg").click(function() {
-							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
-						});*/
-					});
-			}
 		}
 		else if (imgsize == 0) {
 			//$("#curim").css({"width":"auto","height":"90%","margin-top":"0%","border":"0px solid green","opacity":"0"});
@@ -445,7 +432,19 @@ function shtorkaimg(img, imgnum) {
 			}
 		}
 	}
-
+	if (imgnum == 12)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".ssvg").click(function() {
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='valhalla.html' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
+						/*$(".simg").click(function() {
+							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+						});*/
+					});
+			}
 }
 
 
