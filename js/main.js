@@ -333,9 +333,16 @@ function shtorkaimg(img) {
 	$(".sclose").css({"width":"8vh","height":"8vh"});
 	imw = $("#curim").width();
 	imh = $("#curim").height();
+	imraznw = imw/imh;
+	imraznh = imh/imw;
+	imot = 0.9;
+	//alert(imw + ', ' + imh + ', ' + imrazn);
+	currentimg.innerHTML = "<center><div id='curim' style='overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 	//alert(imw + " - " + imh);
 	//alert(widdd + " - " + heiii);
 	//$("#curim").css({"width":"200px","height":"100px"});
+	//<img id='curim' src='"+img+"' style='width:auto;height:auto;'>
+	//background-image:url("+img+"); background-size:100% 100%
 	
 	if (imw > imh) {
 		var imgsize = 1;
@@ -348,53 +355,64 @@ function shtorkaimg(img) {
 	}
 	if (widdd > heiii) {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid red","opacity":"0"});
+			$("#curim2").css({"width":"auto","height":"100%"});
+			$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px","margin-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2;
+			hcurim2 = $("#curim2").height();
+			margin = (heiii - (hcurim2))/2;
 			if (widdd > 768) {
-				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+				$("#curim").animate({"margin-top":margin + "px","opacity":"1"}, 600);
 			}
 			else {
-				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
 			}
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"auto","height":"90%","padding-top":"0%","border":"0px solid green","opacity":"0"});
+			//$("#curim").css({"width":"auto","height":"90%","margin-top":"0%","border":"0px solid green","opacity":"0"});
+			$("#curim2").css({"width":"auto","height":"100%"});
+			$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px","margin-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2;
+			hcurim2 = $("#curim2").height();
+			margin = (heiii - (hcurim2))/2;
 			if (widdd > 768) {
-				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+				$("#curim").animate({"margin-top":margin + "px","opacity":"1"}, 600);
 			}
 			else {
-				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
 			}
 		}
 	}
 	else {
 		if (imgsize == 1) {
-			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid blue","opacity":"0"});
+			//$("#curim").css({"width":"90%","height":"auto","margin-top":"0%","border":"0px solid blue","opacity":"0"});
+			$("#curim2").css({"width":"100%","height":"auto"});
+			$("#curim").css({"width":(heiii*imot)+"px","height":(heiii*imraznh*imot)+"px","margin-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2;
+			hcurim2 = $("#curim2").height();
+			margin = (heiii - (hcurim2))/2;
 			if (widdd > 768) {
-				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+				$("#curim").animate({"margin-top":margin + "px","opacity":"1"}, 600);
 			}
 			else {
-				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
 			}
 		}
 		else if (imgsize == 0) {
-			$("#curim").css({"width":"90%","height":"auto","padding-top":"0%","border":"0px solid black","opacity":"0"});
+			//$("#curim").css({"width":"90%","height":"auto","margin-top":"0%","border":"0px solid black","opacity":"0"});
+			$("#curim2").css({"width":"auto","height":"100%"});
+			$("#curim").css({"width":(heiii*imot)+"px","height":(heiii*imraznh*imot)+"px","margin-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
-			padding = (heiii - imh)/2;
+			hcurim2 = $("#curim2").height();
+			margin = (heiii - (hcurim2))/2;
 			if (widdd > 768) {
-				$("#curim").animate({"padding-top":padding + "px","opacity":"1"}, 600);
+				$("#curim").animate({"margin-top":margin + "px","opacity":"1"}, 600);
 			}
 			else {
-				$("#curim").css({"padding-top":padding + "px","opacity":"1"});
+				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
 			}
 		}
 	}
