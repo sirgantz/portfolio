@@ -522,7 +522,7 @@ function shtorkaimg(img, imgnum) {
 				currentimg.innerHTML = "<div class='smov'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
 				$(".smov").click(function() {
-						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><video src='video.mp4' style='background:black' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' controls></video></div></center>";
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><video src='video.mov' style='background:black' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' controls></video></div></center>";
 						/*$(".simg").click(function() {
 							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 						});*/
