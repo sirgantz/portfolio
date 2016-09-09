@@ -270,51 +270,63 @@ $(window).resize(function() {
 //
 $("#img-1").click(function() {
 	var img = $('#img-1').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 1;
+	shtorkaimg(img, imgnum);
 });
 $("#img-2").click(function() {
 	var img = $('#img-2').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 2;
+	shtorkaimg(img, imgnum);
 });
 $("#img-3").click(function() {
 	var img = $('#img-3').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 3;
+	shtorkaimg(img, imgnum);
 });
 $("#img-4").click(function() {
 	var img = $('#img-4').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 4;
+	shtorkaimg(img, imgnum);
 });
 $("#img-5").click(function() {
 	var img = $('#img-5').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 5;
+	shtorkaimg(img, imgnum);
 });
 $("#img-6").click(function() {
 	var img = $('#img-6').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 6;
+	shtorkaimg(img, imgnum);
 });
 $("#img-7").click(function() {
 	var img = $('#img-7').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 7;
+	shtorkaimg(img, imgnum);
 });
 $("#img-8").click(function() {
 	var img = $('#img-8').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 8;
+	shtorkaimg(img, imgnum);
 });
 $("#img-9").click(function() {
 	var img = $('#img-9').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 9;
+	shtorkaimg(img, imgnum);
 });
 $("#img-10").click(function() {
 	var img = $('#img-10').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 10;
+	shtorkaimg(img, imgnum);
 });
 $("#img-11").click(function() {
 	var img = $('#img-11').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 11;
+	shtorkaimg(img, imgnum);
 });
 $("#img-12").click(function() {
 	var img = $('#img-12').css('background-image')
-	shtorkaimg(img);
+	var imgnum = 12;
+	shtorkaimg(img, imgnum);
 });
 //
 $(".sclose").click(function() {
@@ -324,7 +336,7 @@ $(".sclose").click(function() {
 	$(".sclose").css({"width":"0%","height":"0%"});
 });
 	
-function shtorkaimg(img) {
+function shtorkaimg(img, imgnum) {
 	widdd = $("#block1").width();
 	heiii = $("#shtorka").height();
     img = img.match(/^url\("?(.+?)"?\)$/);
@@ -368,6 +380,12 @@ function shtorkaimg(img) {
 			}
 			else {
 				$("#curim").css({"margin-top":margin + "px","opacity":"1"});
+			}
+			if (imgnum == 12)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='valhalla.html' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
 			}
 		}
 		else if (imgsize == 0) {
@@ -418,6 +436,7 @@ function shtorkaimg(img) {
 			}
 		}
 	}
+
 }
 
 
