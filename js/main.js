@@ -325,6 +325,8 @@ $(".sclose").click(function() {
 });
 	
 function shtorkaimg(img) {
+	widdd = $("#block1").width();
+	heiii = $("#shtorka").height();
     img = img.match(/^url\("?(.+?)"?\)$/);
 	img = img[1];
     currentimg = document.querySelector("#shtorka");
