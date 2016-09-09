@@ -404,7 +404,7 @@ function shtorkaimg(img) {
 		}
 		else if (imgsize == 0) {
 			//$("#curim").css({"width":"90%","height":"auto","margin-top":"0%","border":"0px solid black","opacity":"0"});
-			$("#curim2").css({"width":"auto","height":"100%"});
+			$("#curim2").css({"width":"auto","height":"90%"});
 			$("#curim").css({"width":(heiii*imot)+"px","height":(heiii*imraznh*imot)+"px","margin-top":"0%","border":"0px solid red","opacity":"0"});
 			imw = $("#curim").width();
 			imh = $("#curim").height();
