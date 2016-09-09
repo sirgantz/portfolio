@@ -509,7 +509,7 @@ function shtorkaimg(img, imgnum) {
 				currentimg.innerHTML = "<div class='smov'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
 				$(".smov").click(function() {
-						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='http:/"+"/www.youtube.com/embed/Y9r28X6Rb08' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='http:/"+"/www.vk.com/video_ext.php?oid=19663469&id=456239056&hash=9ecb09338d3e6773&hd=2' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
 						/*$(".simg").click(function() {
 							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 						});*/
