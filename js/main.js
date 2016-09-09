@@ -113,7 +113,7 @@ else {
 
 var i;
 imw = $("#img-1").width();
-for (i = 1; i < 13; i++) {
+for (i = 1; i < 17; i++) {
 	$("#img-"+i).css({"height":imw+"px"});
 	$("#img-" + i).animate({"opacity":"1"}, 300);
 	//var loader = Snap('#img-'+ i +' #loader');
@@ -251,6 +251,30 @@ $('#img-12').bgLoaded({
     }
 });
 
+$('#img-13').bgLoaded({
+    afterLoaded : function() {
+		imgloader(13);
+    }
+});
+
+$('#img-14').bgLoaded({
+    afterLoaded : function() {
+		imgloader(14);
+    }
+});
+
+$('#img-15').bgLoaded({
+    afterLoaded : function() {
+		imgloader(15);
+    }
+});
+
+$('#img-16').bgLoaded({
+    afterLoaded : function() {
+		imgloader(16);
+    }
+});
+
 
 
 $(window).resize(function() {
@@ -262,7 +286,7 @@ $(window).resize(function() {
 	heiii = $("#shtorka").height();
 	var i;
 	imw = $("#img-1").width();
-	for (i = 1; i < 13; i++) {
+	for (i = 1; i < 17; i++) {
 		$("#img-"+i).css({"height":imw+"px"});
 	}
 });
@@ -326,6 +350,26 @@ $("#img-11").click(function() {
 $("#img-12").click(function() {
 	var img = $('#img-12').css('background-image')
 	var imgnum = 12;
+	shtorkaimg(img, imgnum);
+});
+$("#img-13").click(function() {
+	var img = $('#img-13').css('background-image')
+	var imgnum = 13;
+	shtorkaimg(img, imgnum);
+});
+$("#img-14").click(function() {
+	var img = $('#img-14').css('background-image')
+	var imgnum = 14;
+	shtorkaimg(img, imgnum);
+});
+$("#img-15").click(function() {
+	var img = $('#img-15').css('background-image')
+	var imgnum = 15;
+	shtorkaimg(img, imgnum);
+});
+$("#img-16").click(function() {
+	var img = $('#img-16').css('background-image')
+	var imgnum = 16;
 	shtorkaimg(img, imgnum);
 });
 //
@@ -440,6 +484,32 @@ function shtorkaimg(img, imgnum) {
 				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
 				$(".ssvg").click(function() {
 						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='valhalla.html' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
+						/*$(".simg").click(function() {
+							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+						});*/
+					});
+			}
+	if (imgnum == 14)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".ssvg").click(function() {
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='df.html' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
+						/*$(".simg").click(function() {
+							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+						});*/
+					});
+			}
+	if (imgnum == 16)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<div class='smov'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".smov").click(function() {
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><iframe src='http:/"+"/www.youtube.com/embed/Y9r28X6Rb08' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' frameborder='0'>Ваш браузер не поддерживает плавающие фреймы!</iframe></div></center>";
 						/*$(".simg").click(function() {
 							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 						});*/
