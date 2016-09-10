@@ -381,6 +381,7 @@ $(".sclose").click(function() {
 });
 	
 zombieready = 1;
+orkready = 1;
 	
 function shtorkaimg(img, imgnum) {
 	widdd = $("#block1").width();
@@ -476,6 +477,26 @@ function shtorkaimg(img, imgnum) {
 			}
 		}
 	}
+	if (imgnum == 5)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><div class='ork'></div><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".ork").click(function() {
+					if (orkready == 1)
+					{
+						orkready = 0;
+						var audio = new Audio('ork.mp3');
+						audio.volume = 0.3;
+						audio.play();
+						setTimeout(function() {
+							orkready = 1;
+						}, 1000);
+					}
+					
+				});
+			}
 	if (imgnum == 11)
 			{
 				hcurim2 = $("#curim2").height();
@@ -491,7 +512,7 @@ function shtorkaimg(img, imgnum) {
 						audio.play();
 						setTimeout(function() {
 							zombieready = 1;
-						}, 3000);
+						}, 1500);
 					}
 					
 				});
