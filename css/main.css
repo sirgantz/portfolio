@@ -163,6 +163,18 @@ img {
 	cursor: pointer;
 }
 
+.ork {
+	width:14vh;
+	height:12vh;
+	background:none;
+	position:absolute;
+	margin:3vh;
+	margin-top:75vh;
+	margin-left:143vh;
+	z-index: 9999999;
+	cursor: pointer;
+}
+
 .simg {
 	width:8vh;
 	height:8vh;
