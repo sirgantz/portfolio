@@ -486,11 +486,12 @@ function shtorkaimg(img, imgnum) {
 					if (zombieready == 1)
 					{
 						zombieready = 0;
-						var audio = new Audio('omnomnom.wav');
+						var audio = new Audio('zombie.mp3');
+						audio.volume = 0.1;
 						audio.play();
 						setTimeout(function() {
 							zombieready = 1;
-						}, 8000);
+						}, 3000);
 					}
 					
 				});
