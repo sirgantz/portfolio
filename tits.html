@@ -24,26 +24,30 @@
 	ltits.animate({transform: "s0.89 0.85 t0 -15.8"}, 0, mina.easein);
 	rtits.animate({transform: "s0.89 0.85 t-26 -15.6"}, 0, mina.easein);
 	
-	ltits.click(function() {
+	ltits.mousedown(function() {
 		ltits.animate({transform: "s0.84 0.89 t-2 -8.6"}, 750, mina.elastic);
 		lsosok.animate({transform: "s1.05 0.99 t0 -4.6"}, 800, mina.elastic);
-		setTimeout(function() {
+	});
+	ltits.mouseup(function() {
+		ltits.animate().stop();
+		lsosok.animate().stop();
 		ltits.animate({transform: "s0.89 0.85 t0 -15.8"}, 200, mina.backout);
-		},750);
 		setTimeout(function() {
 		lsosok.animate({transform: "s1.0 1.0 t0 0"}, 900, mina.elastic);
-		},300);
+		},150);
 	});
 	
-	rtits.click(function() {
+	rtits.mousedown(function() {
 		rtits.animate({transform: "s0.84 0.89 t-24 -8.6"}, 750, mina.elastic);
 		rsosok.animate({transform: "s1.05 0.99 t0 -4.6"}, 800, mina.elastic);
-		setTimeout(function() {
+		});
+	rtits.mouseup(function() {
+		rtits.animate().stop();
+		rsosok.animate().stop();
 		rtits.animate({transform: "s0.89 0.85 t-26 -15.6"}, 200, mina.backout);
-		},750);
 		setTimeout(function() {
 		rsosok.animate({transform: "s1.0 1.0 t0 0"}, 900, mina.elastic);
-		},300);
+		},150);
 	});
 	
 	});
