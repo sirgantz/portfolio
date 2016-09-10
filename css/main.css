@@ -148,6 +148,7 @@ img {
 	margin-top:58vh;
 	margin-left:31vh;
 	z-index: 9999999;
+	cursor: pointer;
 }
 
 .simg {
