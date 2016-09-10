@@ -132,6 +132,17 @@ body {
 	z-index: 9999999;
 }
 
+.pugovica {
+	width:4vh;
+	height:4vh;
+	background:none;
+	position:absolute;
+	margin:3vh;
+	margin-top:58vh;
+	margin-left:31vh;
+	z-index: 9999999;
+}
+
 .simg {
 	width:8vh;
 	height:8vh;
