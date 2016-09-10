@@ -151,6 +151,18 @@ img {
 	cursor: pointer;
 }
 
+.zombie {
+	width:6vh;
+	height:6vh;
+	background:none;
+	position:absolute;
+	margin:3vh;
+	margin-top:55vh;
+	margin-left:41vh;
+	z-index: 9999999;
+	cursor: pointer;
+}
+
 .simg {
 	width:8vh;
 	height:8vh;
