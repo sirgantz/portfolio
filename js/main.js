@@ -380,7 +380,7 @@ $(".sclose").click(function() {
 	$(".sclose").css({"width":"0%","height":"0%"});
 });
 	
-
+zombieready = 1;
 	
 function shtorkaimg(img, imgnum) {
 	widdd = $("#block1").width();
@@ -476,6 +476,25 @@ function shtorkaimg(img, imgnum) {
 			}
 		}
 	}
+	if (imgnum == 11)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><div class='zombie'></div><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".zombie").click(function() {
+					if (zombieready == 1)
+					{
+						zombieready = 0;
+						var audio = new Audio('omnomnom.wav');
+						audio.play();
+						setTimeout(function() {
+							zombieready = 1;
+						}, 8000);
+					}
+					
+				});
+			}
 	if (imgnum == 8)
 			{
 				hcurim2 = $("#curim2").height();
