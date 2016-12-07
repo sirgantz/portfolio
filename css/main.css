@@ -236,8 +236,10 @@ img {
 		position: absolute;
 		background-image: url("../img/ny.png");
 		background-size: 100% 100%;
+		opacity:0;
 	}
 	#ny3 {
+		opacity:0;
 		width:2.0vw;
 		height:2.0vw;
 		bottom: 11.35vh;
