@@ -14,6 +14,7 @@ $("#logo-text").click(function() {
 				infobready = 0;
 			}, 1010);
 			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
+			//$("#ruka").animate({"opacity":"0"}, 500);
 		}
 		else {
 			infobhidden = 1;
@@ -88,6 +89,7 @@ $("#logo").click(function() {
 				infobready = 0;
 			}, 1010);
 			$("#infob-block").animate({"top":"0px"}, 1000, 'easeInOutCubic');
+			//$("#ruka").animate({"opacity":"0"}, 500);
 		}
 		else {
 			infobhidden = 1;
@@ -113,7 +115,7 @@ else {
 
 var i;
 imw = $("#img-1").width();
-for (i = 1; i < 17; i++) {
+for (i = 1; i < 21; i++) {
 	$("#img-"+i).css({"height":imw+"px"});
 	$("#img-" + i).animate({"opacity":"1"}, 300);
 	//var loader = Snap('#img-'+ i +' #loader');
@@ -275,6 +277,29 @@ $('#img-16').bgLoaded({
     }
 });
 
+$('#img-17').bgLoaded({
+    afterLoaded : function() {
+		imgloader(17);
+    }
+});
+
+$('#img-18').bgLoaded({
+    afterLoaded : function() {
+		imgloader(18);
+    }
+});
+
+$('#img-19').bgLoaded({
+    afterLoaded : function() {
+		imgloader(19);
+    }
+});
+
+$('#img-20').bgLoaded({
+    afterLoaded : function() {
+		imgloader(20);
+    }
+});
 
 
 $(window).resize(function() {
@@ -286,7 +311,7 @@ $(window).resize(function() {
 	heiii = $("#shtorka").height();
 	var i;
 	imw = $("#img-1").width();
-	for (i = 1; i < 17; i++) {
+	for (i = 1; i < 21; i++) {
 		$("#img-"+i).css({"height":imw+"px"});
 	}
 });
@@ -370,6 +395,26 @@ $("#img-15").click(function() {
 $("#img-16").click(function() {
 	var img = $('#img-16').css('background-image')
 	var imgnum = 16;
+	shtorkaimg(img, imgnum);
+});
+$("#img-17").click(function() {
+	var img = $('#img-17').css('background-image')
+	var imgnum = 17;
+	shtorkaimg(img, imgnum);
+});
+$("#img-18").click(function() {
+	var img = $('#img-18').css('background-image')
+	var imgnum = 18;
+	shtorkaimg(img, imgnum);
+});
+$("#img-19").click(function() {
+	var img = $('#img-19').css('background-image')
+	var imgnum = 19;
+	shtorkaimg(img, imgnum);
+});
+$("#img-20").click(function() {
+	var img = $('#img-20').css('background-image')
+	var imgnum = 20;
 	shtorkaimg(img, imgnum);
 });
 //
@@ -582,6 +627,19 @@ function shtorkaimg(img, imgnum) {
 				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
 				$(".smov").click(function() {
 						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><video src='video.mov' style='background:black' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' controls></video></div></center>";
+						/*$(".simg").click(function() {
+							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+						});*/
+					});
+			}
+	if (imgnum == 20)
+			{
+				hcurim2 = $("#curim2").height();
+				wcurim2 = $("#curim2").width();
+				currentimg.innerHTML = "<div class='smov'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
+				$("#curim").css({"width":((heiii*imraznw*imot))+"px","height":(heiii*imot)+"px"});
+				$(".smov").click(function() {
+						currentimg.innerHTML = "<center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><video src='gsf.mp4' style='background:black' width='"+ wcurim2 +"px' height='"+ hcurim2 +"px' controls></video></div></center>";
 						/*$(".simg").click(function() {
 							currentimg.innerHTML = "<div class='ssvg'></div><center><div id='curim' style='margin-top:" + margin + "px;overflow:hidden;width:auto;height:auto;max-width:"+ (widdd*imot) +"px;max-height:"+ (heiii*imot) +"px;'><img id='curim2' src='"+img+"' style='width:100%;height:auto;'></div></center>";
 						});*/
