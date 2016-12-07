@@ -210,6 +210,42 @@ img {
 }
 
 @media only screen and (min-width: 769px) {
+	#ny1 {
+		width:2.0vw;
+		height:2.0vw;
+		bottom: 11.35vh;
+		left: 9.5vw;
+		position: absolute;
+		background-image: url("../img/ny.png");
+		background-size: 100% 100%;
+	}
+	#snow1 {
+		width:4.0vw;
+		height:4.0vw;
+		top: 0.0vh;
+		right: 0.0vw;
+		position: absolute;
+		background-image: url("../img/snow1.png");
+		background-size: 100% 100%;
+	}
+	#ny2 {
+		width:3.0vw;
+		height:3.0vw;
+		bottom: 12.0vh;
+		left: 11.0vw;
+		position: absolute;
+		background-image: url("../img/ny.png");
+		background-size: 100% 100%;
+	}
+	#ny3 {
+		width:2.0vw;
+		height:2.0vw;
+		bottom: 11.35vh;
+		left: 13.46vw;
+		position: absolute;
+		background-image: url("../img/ny.png");
+		background-size: 100% 100%;
+	}
 	#ruka {
 		width:4.0vw;
 		height:4.0vw;
@@ -224,7 +260,7 @@ img {
 		display: inline-block;
 		width: 17.0vw;
 		border: 0.2vw solid #4D7CC1;
-		margin-top: 5px;
+		margin-top: 2px;
 		opacity: 0;
 	}
 	#lang {
@@ -313,16 +349,20 @@ img {
 		opacity: 0;
 	}
 	#footer1 {
-		text-align: center;
+		bottom: 8.0vh;
+		left: 3.8vw;
+		position: absolute;
 		color: #FAFAFA;
-		font-size: 1.2vw;
+		font-size: 1.1vw;
 		padding-top: 0vh;
 		opacity: 0;
 	}
 	#footer2 {
-		text-align: center;
+		bottom: 4.0vh;
+		left: 5.5vw;
+		position: absolute;
 		color: #FAFAFA;
-		font-size: 1.2vw;
+		font-size: 1.1vw;
 		opacity: 0;
 	}
 }
