@@ -1,6 +1,10 @@
 * {
 	margin:0px;
 	padding:0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
 }
 body {
 	background: #0C0C0C;
@@ -37,6 +41,12 @@ img {
 
 
 @media only screen and (max-width: 768px) {
+	#ruka {
+		width:0px;
+		height:0px;
+		opacity:0;
+		position: absolute;
+	}
 	#animblock1 {
 		position: relative;
 		left: -10px;
@@ -200,6 +210,15 @@ img {
 }
 
 @media only screen and (min-width: 769px) {
+	#ruka {
+		width:4.0vw;
+		height:4.0vw;
+		position: absolute;
+		background-image: url("../img/hand.gif");
+		background-size: 100% 100%;
+		left: 17.0vw;
+		top: 1.0vh;
+	}
 	[id*="img-"] {
 		background: #4D7CC1;
 		display: inline-block;
@@ -249,11 +268,12 @@ img {
 	#infobimg {
 		width: 60%;
 		padding-top: 3vh;
+		border-radius: 10px;
 	}
 	#menu {
 		width: 25%;
 		height: 100%;
-		background: #4E63AF;
+		background: #4163b3;
 	}
 	#mobilemenu {
 		width: 0%;
@@ -417,6 +437,26 @@ img {
 #img-16 {
 	height: 150px;
 	background-image: url("../img/port/16.jpg");
+	background-size: 100% 100%;
+}
+#img-17 {
+	height: 150px;
+	background-image: url("../img/port/17.jpg");
+	background-size: 100% 100%;
+}
+#img-18 {
+	height: 150px;
+	background-image: url("../img/port/18.jpg");
+	background-size: 100% 100%;
+}
+#img-19 {
+	height: 150px;
+	background-image: url("../img/port/19.jpg");
+	background-size: 100% 100%;
+}
+#img-20 {
+	height: 150px;
+	background-image: url("../img/port/20.jpg");
 	background-size: 100% 100%;
 }
 
