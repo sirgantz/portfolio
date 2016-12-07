@@ -157,9 +157,11 @@ function imgloader(num) {
 
 setTimeout (function() {
 	$('#logo').animate({opacity:"1"}, 700);
+	$('#ruka').animate({opacity:"1"}, 900);
 	setTimeout (function() {
 		$('#logo-text').animate({opacity:"1"}, 700);
 		setTimeout (function() {
+			$('#ny2').animate({opacity:"1"}, 500);
 			$('#footer1').animate({opacity:"1"}, 700);
 			setTimeout (function() {
 				$('#footer2').animate({opacity:"1"}, 700);
